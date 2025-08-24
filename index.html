@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgriHub – Smart Farming, Simple Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="topbar container fade-in">
+      <div class="brand">
+        <div class="logo">🌱</div>
+        <span>AgriHub</span>
+      </div>
+      
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger">☰</button>
+      
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#weather">Weather</a></li>
+          <li><a href="#market">Market</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+      
+      <div class="actions">
+        <button class="btn">Login</button>
+        <button class="btn primary">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container fade-in">
+    <div class="hero-grid">
+      <div class="card hero-text fade-in">
+        <h1 class="headline">Empowering Farmers with Smart Insights</h1>
+        <p class="sub">AgriHub unites weather, crop advisory, pest diagnosis, market prices, schemes, and more — all in one place.</p>
+        <div class="hero-cta">
+          <button class="btn primary">Get Started</button>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+      <div class="card hero-img fade-in">
+        <img src="https://img.icons8.com/color/452/farm.png" alt="Farm illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sections -->
+  <main>
+    <section id="features" class="container fade-in">
+      <h2>Key Features</h2>
+      <div class="grid features">
+        <div class="card fade-in">🌾 Crop Advisory</div>
+        <div class="card fade-in">🌦 Weather Forecast</div>
+        <div class="card fade-in">🐛 Pest Diagnosis</div>
+        <div class="card fade-in">💹 Market Prices</div>
+        <div class="card fade-in">📊 Analytics Dashboard</div>
+        <div class="card fade-in">🛒 Marketplace</div>
+        <div class="card fade-in">🏛 Government Schemes</div>
+        <div class="card fade-in">🤝 Community Forum</div>
+      </div>
+    </section>
+
+    <section id="weather" class="container fade-in">
+      <h2>Weather Forecast</h2>
+      <div class="grid">
+        <div class="card fade-in">🌞 Monday: Sunny – 32°C</div>
+        <div class="card fade-in">🌧 Tuesday: Rainy – 27°C</div>
+        <div class="card fade-in">⛅ Wednesday: Cloudy – 29°C</div>
+        <div class="card fade-in">🌩 Thursday: Thunderstorm – 26°C</div>
+      </div>
+    </section>
+
+    <section id="advisory" class="container fade-in">
+      <h2>Crop Advisory</h2>
+      <ul class="list">
+        <li>🌾 Best time to sow paddy this week: after rainfall</li>
+        <li>🌱 Use organic fertilizer for better soil health</li>
+        <li>💧 Maintain proper irrigation schedule</li>
+      </ul>
+    </section>
+
+    <section id="pest" class="container fade-in">
+      <h2>Pest Diagnosis</h2>
+      <p>Identify pests by answering simple questions.</p>
+      <button class="btn primary" onclick="diagnosePest()">Start Diagnosis</button>
+      <p id="pestResult" class="result"></p>
+    </section>
+
+    <section id="market" class="container fade-in">
+      <h2>Market Prices</h2>
+      <table>
+        <tr><th>Crop</th><th>Price (₹/kg)</th></tr>
+        <tr><td>Wheat</td><td>₹28</td></tr>
+        <tr><td>Paddy</td><td>₹22</td></tr>
+        <tr><td>Tomato</td><td>₹35</td></tr>
+        <tr><td>Onion</td><td>₹40</td></tr>
+      </table>
+    </section>
+
+    <section id="analytics" class="container fade-in">
+      <h2>Analytics Dashboard</h2>
+      <canvas id="cropChart" width="600" height="300"></canvas>
+    </section>
+
+    <section id="marketplace" class="container fade-in">
+      <h2>Marketplace</h2>
+      <div class="grid">
+        <div class="card fade-in">🥔 Potatoes – ₹25/kg</div>
+        <div class="card fade-in">🌽 Corn Seeds – ₹120/bag</div>
+        <div class="card fade-in">🥛 Organic Milk – ₹50/litre</div>
+      </div>
+    </section>
+
+    <section id="schemes" class="container fade-in">
+      <h2>Government Schemes</h2>
+      <ul class="list">
+        <li>PM-KISAN Samman Nidhi</li>
+        <li>Soil Health Card Scheme</li>
+        <li>Pradhan Mantri Krishi Sinchai Yojana</li>
+      </ul>
+    </section>
+
+    <section id="community" class="container fade-in">
+      <h2>Community Forum</h2>
+      <div class="grid">
+        <div class="card fade-in">👩‍🌾 <strong>Ramesh:</strong> "How to prevent pests in paddy fields?"</div>
+        <div class="card fade-in">👨‍🌾 <strong>Sita:</strong> "Best fertilizer for tomatoes?"</div>
+        <div class="card fade-in">🌾 <strong>Expert:</strong> "Rotate crops to avoid soil depletion."</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container fade-in">
+      <p>© 2025 AgriHub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
