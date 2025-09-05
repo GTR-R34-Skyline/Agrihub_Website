@@ -203,3 +203,9 @@
 @utility ring-offset-background {
   --tw-ring-offset-color: hsl(var(--color-background));
 }
+.geist-mono {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Choose the desired weight */
+  font-style: normal;
+}
